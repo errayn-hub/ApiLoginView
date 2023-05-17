@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F93AACF22A14EDB600EC851F /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93AACF12A14EDB600EC851F /* AuthenticationService.swift */; };
+		F93AACF42A14EDCF00EC851F /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93AACF32A14EDCF00EC851F /* ForgotPasswordView.swift */; };
+		F93AACF62A14EDE900EC851F /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93AACF52A14EDE900EC851F /* SignUpView.swift */; };
 		F95B4CF42A0A2ABE002E8B33 /* ApiLoginViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95B4CF32A0A2ABE002E8B33 /* ApiLoginViewApp.swift */; };
-		F95B4CF62A0A2ABE002E8B33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95B4CF52A0A2ABE002E8B33 /* ContentView.swift */; };
+		F95B4CF62A0A2ABE002E8B33 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95B4CF52A0A2ABE002E8B33 /* LoginView.swift */; };
 		F95B4CF82A0A2ABF002E8B33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F95B4CF72A0A2ABF002E8B33 /* Assets.xcassets */; };
 		F95B4CFC2A0A2ABF002E8B33 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F95B4CFB2A0A2ABF002E8B33 /* Preview Assets.xcassets */; };
 		F95B4D062A0A2ABF002E8B33 /* ApiLoginViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95B4D052A0A2ABF002E8B33 /* ApiLoginViewTests.swift */; };
@@ -34,9 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F93AACF12A14EDB600EC851F /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		F93AACF32A14EDCF00EC851F /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		F93AACF52A14EDE900EC851F /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		F95B4CF02A0A2ABE002E8B33 /* ApiLoginView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApiLoginView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F95B4CF32A0A2ABE002E8B33 /* ApiLoginViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiLoginViewApp.swift; sourceTree = "<group>"; };
-		F95B4CF52A0A2ABE002E8B33 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F95B4CF52A0A2ABE002E8B33 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F95B4CF72A0A2ABF002E8B33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F95B4CF92A0A2ABF002E8B33 /* ApiLoginView.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ApiLoginView.entitlements; sourceTree = "<group>"; };
 		F95B4CFB2A0A2ABF002E8B33 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -72,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F93AACF02A14EDA100EC851F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F93AACF12A14EDB600EC851F /* AuthenticationService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		F95B4CE72A0A2ABE002E8B33 = {
 			isa = PBXGroup;
 			children = (
@@ -96,9 +110,12 @@
 			isa = PBXGroup;
 			children = (
 				F95B4CF32A0A2ABE002E8B33 /* ApiLoginViewApp.swift */,
-				F95B4CF52A0A2ABE002E8B33 /* ContentView.swift */,
+				F95B4CF52A0A2ABE002E8B33 /* LoginView.swift */,
+				F93AACF32A14EDCF00EC851F /* ForgotPasswordView.swift */,
+				F93AACF52A14EDE900EC851F /* SignUpView.swift */,
 				F95B4CF72A0A2ABF002E8B33 /* Assets.xcassets */,
 				F95B4CF92A0A2ABF002E8B33 /* ApiLoginView.entitlements */,
+				F93AACF02A14EDA100EC851F /* Networking */,
 				F95B4CFA2A0A2ABF002E8B33 /* Preview Content */,
 			);
 			path = ApiLoginView;
@@ -259,7 +276,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F95B4CF62A0A2ABE002E8B33 /* ContentView.swift in Sources */,
+				F93AACF22A14EDB600EC851F /* AuthenticationService.swift in Sources */,
+				F93AACF62A14EDE900EC851F /* SignUpView.swift in Sources */,
+				F95B4CF62A0A2ABE002E8B33 /* LoginView.swift in Sources */,
+				F93AACF42A14EDCF00EC851F /* ForgotPasswordView.swift in Sources */,
 				F95B4CF42A0A2ABE002E8B33 /* ApiLoginViewApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
